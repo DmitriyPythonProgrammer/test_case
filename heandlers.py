@@ -19,4 +19,4 @@ async def output(message: types.Message):
                 "2022-12-31T23:59:00", "group_type": "month"}""")
     else:
         answer = await agregate(eval(message.text))
-        await message.answer(str(answer))
+        await message.answer(answer)
